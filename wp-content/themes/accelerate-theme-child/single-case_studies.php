@@ -14,7 +14,6 @@ get_header(); ?>
 		
 			<?php while ( have_posts() ) : the_post();
 				1
-				$size = 'full';
 				$services = get_field('services');
 				$client = get_field('client');
 				$link = get_field('site_link');
@@ -35,7 +34,7 @@ get_header(); ?>
 
 		<div class ="case-study-images">
 		<?php if($image_1) { ?>
-			echo wp_get_attachment_image( $image_1, $size );
+			<img src="<?php echo $image_2; ?>" />
 		<?php } ?>
 		
 		<?php if($image_2) { ?>
