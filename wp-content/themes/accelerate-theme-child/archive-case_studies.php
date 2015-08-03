@@ -23,7 +23,7 @@ get_header(); ?>
 	
 	<article class="case-study">
 		<aside class= "case-study-sidebar">
-			<h2><?php <?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+			<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 			<h5><?php echo $services; ?></h5>
 			<?php the_excerpt(); ?>
 			<p><strong><a href="<?php the_permalink(); ?>">View Project</a></strong></p>
